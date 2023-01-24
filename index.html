@@ -9,7 +9,7 @@
   <body>
 
     <header class="main_header">
-      <a class="logo_header" href="#"> <!--Pravilno li nasval klass?-->
+      <a class="logo_link" href="#"> <!--Pravilno li nasval klass?-->
         <img src="#" alt="Логотип.">
       </a>
       <nav class="navigation">
@@ -101,19 +101,21 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" ><!--Kakoi postavit klass?-->
-          <span class="button navigation_button">Хочу сюда!</span>
+          <span class="button search_button">Хочу сюда!</span>
         </a>
-
       </section>
+
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="#" method="post">
-          <input type="email" name="email" id="email_field">
-          <label for="email_field">Подписаться</label>
+          <!--Moment ne ponyat, nujno li sdes oborachivat input v label?-->
+          <input type="email" name="email">
+          <button type="submit">Подписаться</label>
         </form>
       </section>
     </main>
+
     <footer class="main_footer">
       <section class="footer_social">
         <h2 class="visually_hidden">Социальные сети</h2>
@@ -129,8 +131,18 @@
           </li>
         </ul>
       </section>
-      <a href="tel:78128121212">+7 (812) 812-12-12</a>
-      <img src="#" alt="HTML Academy">
+
+      <section class="contacts">
+        <h2 class="visually_hidden">Контакты</h2>
+        <a href="tel:78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <section class="footer_logo"> <!--Pravilno li nasvan klass?-->
+        <a class="logo_link" href=""> <!--Kakoi klass?-->
+          <img src="#" alt="HTML Academy">
+        </a>
+      </section>
     </footer>
+
   </body>
 </html>
