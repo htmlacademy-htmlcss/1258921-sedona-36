@@ -9,7 +9,9 @@
   <body>
 
     <header class="main_header">
-      <img src="#" alt="Логотип.">
+      <a class="logo_header" href="#"> <!--Pravilno li nasval klass?-->
+        <img src="#" alt="Логотип.">
+      </a>
       <nav class="navigation">
 
         <ul class="navigation_list">
@@ -20,23 +22,23 @@
             <a href="#" class="navigation_link">О седоне</a>
           </li>
           <li class="navigation_item">
-            <a href="#" class="navigation_link">Гостиницы</a>
+            <a href="catalog.html" class="navigation_link">Гостиницы</a>
           </li>
         </ul>
 
-        <ul class="navigation_list navigation_user">
-          <li class="navigation_item">
-            <a href="#" class="navigation_link">
+        <ul class="navigation_user_list">
+          <li class="navigation_user_item">
+            <a href="#" class="navigation_user_link">
               <span class="visually_hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation_item">
-            <a href="#" class="navigation_link">
+          <li class="navigation_user_item">
+            <a href="#" class="navigation_user_link">
               <span class="visually_hidden">Понравившиеся</span>
             </a>
           </li>
-          <li class="navigation_item">
-            <a href="#" class="navigation_link">
+          <li class="navigation_user_item">
+            <a href="#" class="navigation_user_link">
               <span class="button navigation_button">Хочу сюда!</span>
             </a>
           </li>
@@ -46,53 +48,62 @@
 
     <main class="main_index">
       <h1 class="visually_hidden">Седона</h1>
-      <img src="#" alt="Welcome to the Gorgeous.">
-      <img src="#" alt="SEDONA - Because the Grand Canyon sucks.">
+      <img src="#" alt="Welcome to the Gorgeous. SEDONA - Because the Grand Canyon sucks.">
       <section class="advantages">
-        <h2>Седона — небольшой городок в Аризоне,
-          заслуживающий большего!</h2>
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2> <!--Nujen li sdes klass, esli da, to kakoi?-->
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <dl class="advantages_list">
-          <dt class="advantages_item">Настоящий городок</dt>
-          <dd class="advantages_description">Седона — не аттракцион для туристов, там течёт своя жизнь</dd>
-        </dl>
-        <dl class="advantages_list">
-          <dt class="advantages_item">Небольшая площадь</dt>
-          <dd class="advantages_description">Все достопримечательности находятся очень близко</dd>
-        </dl>
-        <dl class="advantages_list">
-          <dt class="advantages_item">Красивая дорога</dt>
-          <dd class="advantages_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</dd>
-        </dl>
-        <dl class="advantages_list">
-          <dt class="advantages_item">Мало туристов</dt>
-          <dd class="advantages_description">Большинство едет в Гранд Каньон и толпится там</dd>
-        </dl>
-        <dl class="advantages_list">
-          <dt class="advantages_item">Там есть мост дьявола</dt>
-          <dd class="advantages_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</dd>
-        </dl>
+        <ul class="advantages_list">
+          <li class="advantages_item">
+            <h3 class="advantages_title">Настоящий городок</h3>
+            <p class="advantages_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <!--Nujno li dobavlyat suda kartinku, mne kajetsya ona dekorativnaya-->
+          </li>
+          <li class="advantages_item">
+            <h3 class="advantages_title">Небольшая площадь</h3>
+            <p class="advantages_description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages_item">
+            <h3 class="advantages_title">Красивая дорога</h3>
+            <p class="advantages_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages_item">
+            <h3 class="advantages_title">Мало туристов</h3>
+            <p class="advantages_description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages_item">
+            <h3 class="advantages_title">Там есть мост дьявола</h3>
+            <p class="advantages_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
       </section>
+
       <section class="recommendations">
-        <h2 class="visually_hidden">Рекомендации</h2>
-        <dl class="recommendations_list">
-          <dt class="recommendations_item">Жильё</dt>
-          <dd class="recommendations_description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
-        </dl>
-        <dl class="recommendations_list">
-          <dt class="recommendations_item">Еда</dt>
-          <dd class="recommendations_description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</dd>
-        </dl>
-        <dl class="recommendations_list">
-          <dt class="recommendations_item">Сувениры</dt>
-          <dd class="recommendations_description">Не только китайского, но и настоящего местного производства!</dd>
-        </dl>
+        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p>Опытный персонал и качественное обслуживание!</p>
+        <!--Mne kajetsya sdes nujni otlichnie ot predidushego spiska klassi, on drugoi nemngo, right?-->
+        <ul class="recommendations_list">
+          <li class="recommendations_item">
+            <h3 class="recommendations_title">Жильё</h3>
+            <p class="recommendations_description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="recommendations_item">
+            <h3 class="recommendations_title">Еда</h3>
+            <p class="recommendations_description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="recommendations_item">
+            <h3 class="recommendations_title">Сувениры</h3>
+            <p class="recommendations_description">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
       </section>
-      <section>
-        <h2 class="visually_hidden">Поиск Гостиницы</h2>
-        <b>Заинтересовались?</b>
+
+      <section class="search">
+        <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button search_button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <a href="#" ><!--Kakoi postavit klass?-->
+          <span class="button navigation_button">Хочу сюда!</span>
+        </a>
+
       </section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
