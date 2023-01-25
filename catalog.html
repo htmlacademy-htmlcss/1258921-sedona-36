@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="main_header">
+  <header class="main_header" data-test="header">
     <a class="header_logo_link" href="#">
       <img class="header_logo_image" src="#" alt="Логотип.">
     </a>
@@ -45,7 +45,7 @@
     </nav>
   </header>
 
-  <main class="main_inner">
+  <main class="main_inner" data-test="main">
     <header class="inner_header">
       <h1 class="inner_header_title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -60,7 +60,7 @@
       </ul>
     </header>
 
-    <section class="catalog_hotels">
+    <section class="catalog_hotels" data-test="filter">
       <h2 class="visually_hidden">Подбор гостиницы</h2>
       <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="catalog_filter_group">
@@ -110,7 +110,7 @@
       </form>
     </section>
 
-    <section class="results">
+    <section class="results" data-test="catalog">
       <h2 class="results_title">Найдено гостиниц: 38</h2>
 
       <select name="results_sorting">
@@ -196,7 +196,7 @@
       </ul>
     </section>
 
-    <section class="subscribe_inner">
+    <section class="subscribe_inner" data-test="subscribe">
       <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="#" method="post">
@@ -207,7 +207,7 @@
 
   </main>
 
-  <footer class="main_footer">
+  <footer class="main_footer" data-test="footer">
     <section class="footer_social">
       <h2 class="visually_hidden">Социальные сети</h2>
       <ul class="social_list">
