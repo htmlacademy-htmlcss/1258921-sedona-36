@@ -1,10 +1,11 @@
-/*font-family ?
-  font-style
-  font-weight
-  font-size
-  line-height
-    other (a, )
+/*font-family       /yes
+  font-style        /
+  font-weight       /
+  font-size         /
+  line-height       /
 */
+
+/*Fonts*/
 
 @font-face {
   font-family: "PT Sans";
@@ -22,10 +23,67 @@
   font-display: swap;
 }
 
+/*Other*/
+.button {
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/*Content*/
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  background-color: #F2F2F2;
   color: #000000;
-  background-color: #ffffff;
 }
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Header*/
+
+  /*Lists*/
+
+.navigation_list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.navigation_user_list {
+  list-style-type: none;
+}
+
+
+/*Advantages*/
