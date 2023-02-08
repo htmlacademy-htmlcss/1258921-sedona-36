@@ -1,12 +1,3 @@
-/*font-family       /yes
-  font-style        /
-  font-weight       /
-  font-size         /
-  line-height       /
-*/
-
-/*Fonts*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -23,44 +14,6 @@
   font-display: swap;
 }
 
-/*Other*/
-.button {
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #756157;
-  color: #FFFFFF;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.paragraph {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.background {
-  background-color: #FFFFFF;
-}
-
-/*Content*/
-
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: #F2F2F2;
-  color: #000000;
-}
-
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -74,9 +27,26 @@ body {
   overflow: hidden;
 }
 
-/*Header*/
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+  color: #000000;
+}
 
-  /*Lists*/
+.container {
+  background-color: #FFFFFF;
+}
+
+.main_header {}
+
+.header_logo_link {}
+
+.header_logo_image {}
+
+.navigation {}
 
 .navigation_list {
   font-weight: 700;
@@ -85,53 +55,137 @@ body {
   list-style-type: none;
 }
 
+.navigation_item {}
+
+.navigation_link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .navigation_user_list {
   list-style-type: none;
 }
 
-/*Hero*/
+.navigation_user_item {}
 
-.hero {
-  background-image: url("../images/index/index-background.jpg");
-
-}
-
-
-/*Advantages*/
-
-.advantages_list,
-.recommendations_list {
-  font-size: 18px;
-  line-height: 21px;
-  list-style: none;
-}
-
-.advantages_title,
-.recommendations_title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  text-align: center;
+.navigation_user_link {
+  text-decoration: none;
   color: #000000;
 }
 
-.advantages_description,
-.recommendations_description {
+.navigation_user_favorite {
+  font-size: 10px;
+  line-height: 10px;
   text-align: center;
-}
-
-.blue_square {
-  background-color: #82B3D3;
   color: #FFFFFF;
 }
 
-.light_gray_square {
+.button {}
+
+.navigation_button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #ffffff;
+}
+
+.main_index {}
+
+.hero {
+  background-image: url("../images/index/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main_index_logo {}
+
+.advantages {}
+
+.advantages_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.advantages_text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
   color: #333333;
-  color: tomato;
+}
+
+.advantages_list {}
+
+.advantages_item {}
+
+.advantages_subtitle {}
+
+.advantages_desc {}
+
+.advantages_image {}
+
+.blue_square {
+  background-color: #82B3D3;
+}
+
+.light_gray_square {
   background-color: #83B3D31F;
 }
 
 .dark_gray_square {
   background-color: #83B3D333;
 }
+
+.recommendations {}
+
+.recommendations_title {}
+
+.recommendations_text {}
+
+.recommendations_list {}
+
+.recommendations_item {}
+
+.recommendations_subtitle {}
+
+.recommendations_desc {}
+
+.search {}
+
+.search_title {}
+
+.search_text {}
+
+.search_link {}
+
+.search_button {}
+
+.subscribe {}
+
+.subscribe_title {}
+
+.subscribe_text {}
+
+.main_footer {}
+
+.footer_social {}
+
+.social_list {}
+
+.social_item {}
+
+.social_link {}
+
+.contacts {}
+
+.contacts_link {}
+
+.footer_logo {}
+
+.footer_logo_link {}
+
+.footer_logo_image {}
