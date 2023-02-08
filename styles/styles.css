@@ -47,6 +47,10 @@
   text-align: center;
 }
 
+.background {
+  background-color: #FFFFFF;
+}
+
 /*Content*/
 
 body {
@@ -85,5 +89,49 @@ body {
   list-style-type: none;
 }
 
+/*Hero*/
+
+.hero {
+  background-image: url("../images/index/index-background.jpg");
+
+}
+
 
 /*Advantages*/
+
+.advantages_list,
+.recommendations_list {
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.advantages_title,
+.recommendations_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages_description,
+.recommendations_description {
+  text-align: center;
+}
+
+.blue_square {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.light_gray_square {
+  color: #333333;
+  color: tomato;
+  background-color: #83B3D31F;
+}
+
+.dark_gray_square {
+  background-color: #83B3D333;
+}
