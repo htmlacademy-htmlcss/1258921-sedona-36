@@ -36,7 +36,7 @@ body {
   color: #000000;
 }
 
-.container {
+.main_container {
   background-color: #FFFFFF;
 }
 
@@ -70,7 +70,6 @@ body {
 
 .navigation_user_link {
   text-decoration: none;
-  color: #000000;
 }
 
 .navigation_user_favorite {
@@ -156,36 +155,159 @@ body {
 
 .search {}
 
-.search_title {}
+.search_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-.search_text {}
+.search_text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
 
-.search_link {}
+.search_link {
+  text-decoration: none;
+}
 
-.search_button {}
+.search_button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #FFFFFF;
+}
 
-.subscribe {}
+.subscribe {
+  background-image: url("../images/index/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 
-.subscribe_title {}
+}
 
-.subscribe_text {}
+.subscribe_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscribe_text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
 .main_footer {}
 
 .footer_social {}
 
-.social_list {}
+.social_list {
+  list-style-type: none;
+}
 
 .social_item {}
 
 .social_link {}
 
-.contacts {}
+.contacts {
+  font-size: 40px;
+  line-height: 40px;
+}
 
-.contacts_link {}
+.contacts_link {
+  text-decoration: none;
+  color: #000000;
+}
 
 .footer_logo {}
 
 .footer_logo_link {}
 
 .footer_logo_image {}
+
+
+/*CATALOG*/
+
+.main_inner {}
+
+.inner_container {
+  background-image: url("../images/catalog/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.inner_header {}
+
+.inner_header_title {}
+
+.breadcrumbs {}
+
+.breadcrumbs_item {}
+
+.breadcrumbs_link {}
+
+.catalog_hotels {}
+
+.catalog_filter {}
+
+.catalog_filter_group {}
+
+.catalog_filter_title {}
+
+.catalog_filter_list {}
+
+.catalog_filter_item {}
+
+.control_input {}
+
+.control {}
+
+.results {}
+
+.results_title {}
+
+.results_view_list {}
+
+.results_view_item {}
+
+.results_view_link {}
+
+.results_hotel_list {}
+
+.results_hotel_item {}
+
+.results_hotel_title {}
+
+.results_hotel_image {}
+
+.results_hotel_text {}
+
+.results_hotel_link {}
+
+.results_hotel_stars {}
+
+.results_hotel_stars_image {}
+
+.results_hotel_rating {}
+
+.pagination {}
+
+.pagination_item {}
+
+.pagination_link {}
+
+.subscribe_inner {}
+
+.subscribe_inner_title {}
+
+.subscribe_inner_text {}
