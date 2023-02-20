@@ -171,7 +171,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 400px;
+  height: 385px;
 }
 
 .advantages_item:nth-child(2),
@@ -186,6 +186,9 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.advantages_image {
 }
 
 .blue_square .advantages_subtitle,
@@ -225,8 +228,8 @@ body {
 }
 
 .recommendations_item {
-  height: 400px;
   width: 400px;
+  height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
