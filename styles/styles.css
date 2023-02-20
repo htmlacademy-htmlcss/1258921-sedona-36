@@ -320,10 +320,7 @@ body {
   margin: 0 auto;
   padding: 8px 34px;
   border-radius: 4px;
-
-}
-
-.subscribe_input {
+  display: block;
 
 }
 
@@ -336,10 +333,13 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
 }
 /* Nado dorasobratsya s knopkoi (otklychit style) */
 
-
+.subscribe_form {
+  display: flex;
+}
 
 
 
