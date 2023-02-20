@@ -27,13 +27,21 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #333333;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .container {
@@ -42,12 +50,31 @@ body {
 
 
 /* Header */
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+
+}
 
 .navigation_list {
+  outline: 3px solid purple;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  list-style: none;
+  list-style-type: none;
+  width: 507px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.navigation_logo {
+  align-self: flex-start;
 }
 
 .navigation_link {
@@ -55,9 +82,18 @@ body {
   color: #000000;
 }
 
-.navigation_user_list {
-  list-style: none;
+.navigation_user {
+  outline: 3px solid purple;
+  list-style-type: none;
+  width: 268px;
+  max-width: 268px;
+  margin-left: auto;
+  margin-right: 70px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.navigation_user_item {}
 
 .navigation_user_link {
   text-decoration: none;
@@ -67,10 +103,22 @@ body {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
+  background-color: #7DB54F;
   color: #FFFFFF;
 }
 
 /* Main */
+
+
+.main_container {
+  flex-grow: 1;
+}
+
+.page_container {
+  background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .hero {
   background-image: url("../images/index/index-background.jpg");
@@ -102,13 +150,33 @@ body {
 }
 
 .advantages_list {
+  outline: 3px solid red;
   font-size: 18px;
   line-height: 21px;
   list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* justify-content: center; */
 }
 
 .advantages_item {
+  outline: 3px solid green;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+}
+
+.advantages_item:nth-child(2),
+.advantages_item:nth-child(6) {
+  width: 800px;
 }
 
 .advantages_subtitle,
@@ -138,13 +206,31 @@ body {
 }
 
 /* Recommendations */
+.advantages,
+.recommendations,
+.search,
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .recommendations_list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .recommendations_item {
-  text-align: center;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Search */
@@ -180,19 +266,48 @@ body {
 
 /* Footer */
 
+.main_footer_container {
+  width: 1200px;
+  height: 120px;
+  display: flex;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.main_footer {}
+
+.footer_social {
+  outline: 3px solid red;
+  width: 142px;
+  margin-left: 70px;
+}
 
 .social_list {
   list-style-type: none;
 }
 
 .contacts {
+  outline: 3px solid #3ae6ca;
   font-size: 40px;
   line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
 }
 
 .contacts_link {
   text-decoration: none;
   color: #000000;
+}
+
+.footer_logo {
+  outline: 3px solid green;
+  width: 115px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Other */
@@ -207,9 +322,67 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   color: #ffffff;
+  margin: 0 auto;
+  padding: 8px 34px;
+
 }
 
 .subscribe_button {
   background-color: #82B3D3;
   color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Catalog */
+
+.inner_container {
+  background-image: url("../images/catalog/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.inner_container {
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.inner_header_title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs,
+.catalog_filter_list {
+  list-style: none;
+}
+
+.breadcrumbs_link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.catalog_filter_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+h1, h2, h3, p {
+  outline: 3px solid gold;
 }
