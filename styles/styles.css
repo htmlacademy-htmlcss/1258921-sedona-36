@@ -27,13 +27,21 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #333333;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -42,12 +50,43 @@ body {
 
 
 /* Header */
+.navigation {
+  width: 1200px;
+  /* min-height: 64px; */
+  margin: 0 auto;
+  display: flex;
+  background-color: #FFFFFF;
+}
+
+.header_logo_link {
+  outline: 3px solid red;
+  display: inline;
+  width: 140px;
+  margin-left: 70px;
+  margin-right: 28px;
+  text-decoration: none;
+  /* box-sizing: border-box; */
+}
+
+.header_logo_image {
+  outline: 3px solid green;
+  display: inline;
+  /* box-sizing: border-box; */
+}
 
 .navigation_list {
+  outline: 3px solid firebrick;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  list-style: none;
+  list-style-type: none;
+  width: 339px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navigation_link {
@@ -55,8 +94,16 @@ body {
   color: #000000;
 }
 
-.navigation_user_list {
-  list-style: none;
+.navigation_user {
+  outline: 3px solid gold;
+  width: 268px;
+  list-style-type: none;
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation_user_link {
@@ -67,20 +114,43 @@ body {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
+  background-color: #7DB54F;
   color: #FFFFFF;
 }
 
 /* Main */
 
+
+.main_container {
+  flex-grow: 1;
+}
+
+.page_container {
+  background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .hero {
+  min-height: 485px;
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  outline: 3px solid red;
+}
+
+.main_index_logo {
+  outline: auto;
+  display: inline-block;
+  margin-top: 51px;
 }
 
 /* Advantages */
 
+.advantages {
+  min-height: 1437px;
+}
 
 .advantages_title,
 .recommendations_title,
@@ -105,10 +175,24 @@ body {
   font-size: 18px;
   line-height: 21px;
   list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages_item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  min-height: 385px;
+}
+
+.advantages_item_image {
+  width: 800px;
 }
 
 .advantages_subtitle,
@@ -138,19 +222,46 @@ body {
 }
 
 /* Recommendations */
+.recommendations {
+  min-height: 631px;
+}
+
+.advantages,
+.recommendations,
+.search,
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .recommendations_list {
+  font-size: 18px;
+  line-height: 21px;
   list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recommendations_item {
-  text-align: center;
+  width: 400px;
+  min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Search */
 
 
 .search {
+  min-height: 406px;
   text-align: center;
 }
 
@@ -166,10 +277,12 @@ body {
 }
 
 .subscribe {
+  min-height: 415px;
   background-image: url("../images/index/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+
 }
 
 .subscribe_text {
@@ -180,6 +293,18 @@ body {
 
 /* Footer */
 
+.main_footer_container {
+  width: 1200px;
+  min-height: 120px;
+  display: flex;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.footer_social {
+  width: 142px;
+  margin-left: 70px;
+}
 
 .social_list {
   list-style-type: none;
@@ -188,11 +313,23 @@ body {
 .contacts {
   font-size: 40px;
   line-height: 40px;
+  width: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts_link {
   text-decoration: none;
   color: #000000;
+}
+
+.footer_logo {
+  width: 115px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Other */
@@ -207,9 +344,75 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   color: #ffffff;
+  margin: 0 auto;
+  padding: 8px 34px;
+  border-radius: 4px;
+  display: block;
+
 }
 
 .subscribe_button {
   background-color: #82B3D3;
   color: #ffffff;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
+}
+/* Nado dorasobratsya s knopkoi (otklychit style) */
+
+.subscribe_form {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Catalog */
+
+.inner_container {
+  background-image: url("../images/catalog/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.inner_container {
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.inner_header_title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs,
+.catalog_filter_list {
+  list-style: none;
+}
+
+.breadcrumbs_link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.catalog_filter_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
