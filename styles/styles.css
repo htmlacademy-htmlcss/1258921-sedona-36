@@ -52,23 +52,40 @@ body {
 /* Header */
 .navigation {
   width: 1200px;
-  min-height: 64px;
+  /* min-height: 64px; */
   margin: 0 auto;
   display: flex;
   background-color: #FFFFFF;
 }
 
+.header_logo_link {
+  outline: 3px solid red;
+  display: inline;
+  width: 140px;
+  margin-left: 70px;
+  margin-right: 28px;
+  text-decoration: none;
+  /* box-sizing: border-box; */
+}
+
+.header_logo_image {
+  outline: 3px solid green;
+  display: inline;
+  /* box-sizing: border-box; */
+}
+
 .navigation_list {
+  outline: 3px solid firebrick;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   list-style-type: none;
-  width: 507px;
+  width: 339px;
   margin: 0;
+  margin-right: auto;
   padding: 0;
-  margin-left: 70px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -78,12 +95,15 @@ body {
 }
 
 .navigation_user {
+  outline: 3px solid gold;
   width: 268px;
   list-style-type: none;
-  margin-left: auto;
+  margin: 0;
   margin-right: 70px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation_user_link {
@@ -117,6 +137,13 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  outline: 3px solid red;
+}
+
+.main_index_logo {
+  outline: auto;
+  display: inline-block;
+  margin-top: 51px;
 }
 
 /* Advantages */
@@ -153,22 +180,18 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-
-  /* justify-content: center; */
 }
 
 .advantages_item {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
-.advantages_item:nth-child(2),
-.advantages_item:nth-child(6) {
+.advantages_item_image {
   width: 800px;
 }
 
@@ -215,15 +238,19 @@ body {
 }
 
 .recommendations_list {
+  font-size: 18px;
+  line-height: 21px;
   list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .recommendations_item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,7 +295,7 @@ body {
 
 .main_footer_container {
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   display: flex;
   margin: 0 auto;
   background-color: #FFFFFF;
