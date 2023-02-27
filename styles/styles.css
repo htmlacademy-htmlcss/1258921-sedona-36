@@ -52,14 +52,14 @@ body {
 /* Header */
 .navigation {
   width: 1200px;
-  /* min-height: 64px; Potom ubrat */
   margin: 0 auto;
   display: flex;
   background-color: #FFFFFF;
+  /* max-height: 64px; */
 }
 
 .header_logo_link {
-  display: inline;
+  display: block;
   width: 140px;
   padding: 0;
   margin: 0;
@@ -82,6 +82,7 @@ body {
   line-height: 24px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 539px;
   margin: 0;
   padding: 0;
@@ -355,7 +356,7 @@ body {
 
 .main_footer_container {
   width: 1200px;
-  /* min-height: 120px; */
+  min-height: 120px;
   display: flex;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -368,7 +369,6 @@ body {
 
 .social_list {
   list-style-type: none;
-  outline: 3px solid red;
   /* margin: 0;
   margin-top: 45px;
   padding: 0;
@@ -452,8 +452,10 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   display: block;
-  margin-bottom: 96px;
+}
 
+.search_button {
+  margin-bottom: 96px;
 }
 
 .subscribe_button {
