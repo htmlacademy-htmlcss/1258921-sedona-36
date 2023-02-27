@@ -52,7 +52,7 @@ body {
 /* Header */
 .navigation {
   width: 1200px;
-  /* min-height: 64px; */
+  min-height: 128px; /*Potom ubrat*/
   margin: 0 auto;
   display: flex;
   background-color: #FFFFFF;
@@ -124,7 +124,7 @@ body {
 }
 
 .navigation_user_link_like {
-  background-image: url("/images/header/heart.svg");
+  background-image: url("../images/header/heart.svg");
   width: 20px;
   height: 20px;
 }
@@ -368,6 +368,45 @@ body {
 
 .social_list {
   list-style-type: none;
+  outline: 3px solid red;
+  /* margin: 0;
+  margin-top: 45px;
+  padding: 0;
+  width: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; */
+}
+
+.social_item {
+  /* outline:auto;
+  width: 48px;
+  height: 40px;
+  padding: auto; */
+}
+
+.social_link {
+  text-decoration: none;
+  color: #000000;
+  /* display: inline-block; */
+}
+
+.social_link_vk {
+  /* background-image: url("../images/footer/vk.svg");
+  width: 25px;
+  height: 15px; */
+}
+
+.social_link_telegram {
+  /* background-image: url("../images/footer/telegram.svg");
+  width: 18px;
+  height: 17px; */
+}
+
+.social_link_youtube {
+  /* background-image: url("../images/footer/youtube.svg");
+  width: 23px;
+  height: 18px; */
 }
 
 .contacts {
@@ -390,6 +429,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer_logo_link {
+  text-decoration: none;
+  color: #000000;
 }
 
 /* Other */
