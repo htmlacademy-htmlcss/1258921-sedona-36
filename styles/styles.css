@@ -73,7 +73,6 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .navigation_list {
@@ -150,13 +149,13 @@ body {
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  text-align: center;
   padding-top: 51px;
   padding-bottom: 82px;
 }
 
 .main_index_logo {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Advantages */
