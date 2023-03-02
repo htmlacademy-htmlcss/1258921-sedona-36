@@ -339,7 +339,7 @@ body {
 /* Footer */
 
 
-.main_footer_container {
+.page_footer_container {
   width: 1200px;
   min-height: 120px;
   display: flex;
@@ -443,12 +443,12 @@ body {
 }
 
 .subscribe_button {
-  background-color: #82B3D3;
-  color: #ffffff;
   font-family: 'PT Sans';
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  background-color: #82B3D3;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
@@ -462,3 +462,173 @@ body {
 
 
 /* Catalog */
+
+
+.inner_header_container {
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../images/catalog/filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner_header_title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+}
+
+/* Breadcrumbs */
+
+
+.breadcrumbs_list {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs_link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.catalog_filter_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Buttons */
+
+
+.button {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 8px 50px;
+  border-radius: 4px;
+  background-color: #82B3D3;
+  border: none;
+}
+
+.reset_button {
+  background-color: transparent;
+}
+
+/* Filter */
+
+
+.catalog_filter_group {
+  padding: 0;
+  border: none;
+}
+
+.catalog_filter_title {
+  text-transform: capitalize;
+  padding: 0;
+}
+
+.catalog_filter_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Results Sorting */
+
+
+.results {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.results_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.results_sorting {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 131px 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  color: #333333;
+  outline: none;
+}
+
+.results_view_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .results_view_link {
+  background-image: url(../images/catalog/mode-1.svg);
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  display: block;
+  width: 16px;
+  height: 14px;
+  padding: 17px 16px;
+} */
+
+
+/* Results Hotel List */
+
+.results_hotel_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.results_hotel_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+
+}
+
+.results_hotel_image {
+  display: block;  /*Nujen li tut display: block?*/
+}
+
+.results_hotel_text {
+  margin: 0;
+}
+
+.results_hotel_link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 8px 34px;
+  border-radius: 4px;
+  /* display: block; */
+}
+
+.blue_button {
+  background-color: #82B3D3;
+}
