@@ -67,6 +67,8 @@ body {
   margin-right: 28px;
   text-decoration: none;
   box-sizing: border-box;
+  margin-bottom: -6px;
+  z-index: 2;
 }
 
 .header_logo_image {
@@ -619,6 +621,7 @@ body {
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
+  /* align-items: start; */
 }
 
 .results_hotel_item {
@@ -627,9 +630,10 @@ body {
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 212px 28px 21px 36px 36px;
+  grid-template-rows: 212px 1fr min-content min-content min-content;
   column-gap: 16px;
   row-gap: 20px;
+  align-items: center;
 }
 
 .results_hotel_title {
@@ -640,7 +644,7 @@ body {
   margin: 0;
   grid-column: 1/-1;
   grid-row: 2/3;
-
+  align-self: start;
 }
 
 .results_hotel_image {
@@ -657,7 +661,6 @@ body {
 
 .results_hotel_text_right {
   justify-self: end;
-  /* Ostanovilsya tut, ustal, nichego uje ne vduplyauy */
 }
 
 .results_hotel_link {
@@ -671,13 +674,14 @@ body {
   color: #ffffff;
   display: inline-block;
   margin: 0 auto;
-  padding: 8px 26px;
+  padding: 8px 10px;
+  width: 100%;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .blue_button {
   background-color: #82B3D3;
-  padding: 8px 20px;
 }
 
 .results_hotel_stars {
@@ -693,10 +697,13 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   margin: 0 auto;
-  padding: 8px 22px;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #F2F2F2;
   border-radius: 4px;
   display: inline-block;
+  text-align: center;
 }
 
 /* Pagination */
