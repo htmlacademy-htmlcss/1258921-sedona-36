@@ -94,7 +94,17 @@ body {
   display: block;
   text-decoration: none;
   color: #000000;
-  padding: 20px 16px;
+  padding: 20px 0;
+  margin: 0 16px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+
+.navigation_link_current {
+  border-bottom: 2px solid #756257;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -111,6 +121,7 @@ body {
 }
 
 .navigation_user {
+  outline: 3px solid #337784;
   width: 268px;
   list-style-type: none;
   margin: 0;
@@ -123,7 +134,10 @@ body {
 }
 
 .navigation_user_link {
-  display: block;
+  outline: 3px solid aquamarine;
+  display: inline-block;
+  /* width: 44px; */
+  /* height: 64px; */
   position: relative;
   text-decoration: none;
 }
@@ -141,7 +155,7 @@ body {
   fill: #7561574D;
 } */
 
-.navigation_icon {
+/* .navigation_icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -149,7 +163,7 @@ body {
   left: 0;
   margin: auto;
   fill: #dbdbdb;
-}
+} */
 
 .navigation_user_link_search {
   /* width: 20px;
@@ -161,7 +175,7 @@ body {
   /* width: 20px;
   height: 20px; */
 }
-
+/*
 .navigation_user_favorite {
   font-size: 10px;
   line-height: 10px;
@@ -174,12 +188,10 @@ body {
   box-sizing: border-box;
   padding: 5px;
   border-radius: 50%;
-  /* display: block; */
   position: absolute;
   bottom: 0;
   left: 9px;
-  /* aspect-ratio: calc(50%); */
-}
+} */
 
 /* Main */
 
@@ -200,6 +212,19 @@ body {
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
+  position: relative;
+}
+
+.hero::after {
+  background-image: url("../images/index/hero_decoration.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 57px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
 }
 
 .main_index_logo {
@@ -367,35 +392,31 @@ body {
 }
 
 .recommendations_subtitle {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.recommendations_item:nth-child(1) .recommendations_subtitle::before {
-  position: absolute;
-  bottom: 58px;
-  width: 75px;
+.recommendations_item:nth-child(1)::before {
+  width: 77px;
   height: 72px;
   background-image: url("../images/index/advantage-icon-1.svg");
+  background-repeat: no-repeat;
   content: "";
 }
 
-.recommendations_item:nth-child(2) .recommendations_subtitle::before {
-  position: absolute;
-  bottom: 58px;
-  left: -18px;
-  width: 74px;
-  height: 70px;
+.recommendations_item:nth-child(2)::before {
+  width: 76px;
+  height: 72px;
   background-image: url("../images/index/advantage-icon-2.svg");
+  background-repeat: no-repeat;
   content: "";
 }
 
-.recommendations_item:nth-child(3) .recommendations_subtitle::before {
-  position: absolute;
-  bottom: 58px;
-  left: 22px;
-  width: 64px;
+.recommendations_item:nth-child(3)::before {
+  width: 76px;
   height: 76px;
   background-image: url("../images/index/advantage-icon-3.svg");
+  background-repeat: no-repeat;
   content: "";
 }
 
@@ -493,15 +514,15 @@ body {
   fill: #83B3D3;
 }
 
-.social_link:hover .social_icon {
+.social_link:hover path {
   fill: #68A2CA;
 }
 
-.social_link:focus .social_icon {
+.social_link:focus path {
   fill: #68A2CA;
 }
 
-.social_link:active .social_icon {
+.social_link:active path {
   fill: #68A2CA4D;
 }
 
@@ -560,15 +581,15 @@ body {
   color: #000000;
 }
 
-.footer_logo_image:hover {
+.footer_logo_link:hover path {
   fill: #756157;
 }
 
-.footer_logo_image:focus {
+.footer_logo_link:focus path {
   fill: #756157;
 }
 
-.footer_logo_image:active {
+.footer_logo_link:active path {
   fill: #7561574D;
 }
 
