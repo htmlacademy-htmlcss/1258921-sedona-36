@@ -45,17 +45,18 @@ body {
 }
 
 .container {
+  width: 1200px;
+  margin: 0 auto;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px #00000033;
 }
+
 
 /* Header */
 
 
 .navigation {
-  width: 1200px;
-  margin: 0 auto;
   display: flex;
-  background-color: #FFFFFF;
 }
 
 .header_logo_link {
@@ -112,16 +113,11 @@ body {
   background-color: #E5E5E5;
 }
 
-/* .navigation_link:focus {
-  outline: 1px solid #3ae6ca;
-} */
-
 .navigation_link:active {
   color: #FFFFFF;
 }
 
 .navigation_user {
-  outline: 3px solid #337784;
   width: 268px;
   list-style-type: none;
   margin: 0;
@@ -134,76 +130,43 @@ body {
 }
 
 .navigation_user_link {
-  outline: 3px solid aquamarine;
   display: inline-block;
-  /* width: 44px; */
-  /* height: 64px; */
   position: relative;
   text-decoration: none;
 }
 
 
-/* .navigation_icon:hover {
-  fill: #82B3D3;
-}
-
-.navigation_user_link:focus {
+.navigation_user_link_search:hover path,
+.navigation_user_link_saved:hover path{
   fill: #756157;
 }
 
-.navigation_user_link:active {
-  fill: #7561574D;
-} */
-
-/* .navigation_icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #dbdbdb;
-} */
-
-.navigation_user_link_search {
-  /* width: 20px;
-  height: 20px; */
+.navigation_user_link_search:active path,
+.navigation_user_link_saved:active path {
+  fill: #E5E5E5;
 }
 
-.navigation_user_link_saved {
-  /* background-image: url("../images/header/heart.svg"); */
-  /* width: 20px;
-  height: 20px; */
-}
-/*
 .navigation_user_favorite {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
   background-color: #7DB54F;
   color: #FFFFFF;
-
   width: 20px;
   height: 20px;
   box-sizing: border-box;
   padding: 5px;
   border-radius: 50%;
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 9px;
-} */
+}
 
 /* Main */
 
 
 .main_container {
   flex-grow: 1;
-}
-
-.page_container {
-  background-color: #FFFFFF;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .hero {
@@ -388,7 +351,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-top: 183px; */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .recommendations_subtitle {
@@ -436,7 +400,6 @@ body {
 /* Subscribe */
 
 
-/* .subscribe .subscribe_text  Sachem ne ponimay */
 .subscribe_text,
 .subscribe_title {
   color: #FFFFFF;
@@ -461,11 +424,8 @@ body {
 
 
 .page_footer_container {
-  width: 1200px;
-  min-height: 120px;
   display: flex;
-  margin: 0 auto;
-  background-color: #FFFFFF;
+  min-height: 120px;
 }
 
 .footer_social {
@@ -483,7 +443,6 @@ body {
   padding: 0;
   list-style-type: none;
   width: 144px;
-  /* margin-bottom: 28px; */
 }
 
 .social_item {
@@ -526,21 +485,6 @@ body {
   fill: #68A2CA4D;
 }
 
-.social_link_vk {
-  /* width: 25px;
-  height: 15px; */
-}
-
-.social_link_telegram {
-  /* width: 18px;
-  height: 17px; */
-}
-
-.social_link_youtube {
-  /* width: 23px;
-  height: 18px; */
-}
-
 .contacts {
   font-size: 40px;
   line-height: 40px;
@@ -569,8 +513,6 @@ body {
 }
 
 .footer_logo {
-  /* width: 115px;
-  margin-right: 70px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -593,10 +535,6 @@ body {
   fill: #7561574D;
 }
 
-/* .footer_logo:disabled {
-  outline: 2px solid #83B3D3;
-  background: none;
-} */
 
 /* Buttons */
 
@@ -620,13 +558,6 @@ body {
 .search_button:hover {
   background-color: #615048;
 }
-
-
-/* .navigation_button:focus,
-.navigation_button:focus {
-  outline: 2px solid #83B3D3;
-  background: none;
-} */
 
 .navigation_button:active,
 .search_button:active {
@@ -665,11 +596,6 @@ body {
   color: #FFFFFF4D;
 }
 
-/* .subscribe_button:disabled {
-  outline: 2px solid #83B3D3;
-  background: none;
-} */
-
 .subscribe_button:disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
@@ -678,7 +604,6 @@ body {
 .subscribe_form {
   display: flex;
 }
-
 
 
 /* Catalog */
