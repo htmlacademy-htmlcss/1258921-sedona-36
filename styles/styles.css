@@ -155,7 +155,7 @@ body {
   width: 20px;
   height: 20px;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 5px 0;
   border-radius: 50%;
   position: absolute;
   bottom: 15px;
@@ -603,6 +603,20 @@ body {
 
 .subscribe_form {
   display: flex;
+}
+
+.subscribe_input {
+  padding: 20px 14px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 452px;
+  height: 52px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 
