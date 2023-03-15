@@ -94,6 +94,7 @@ body {
 .navigation_link {
   display: block;
   text-decoration: none;
+  text-transform: capitalize;
   color: #000000;
   padding: 20px 0;
   margin: 0 16px;
@@ -125,8 +126,16 @@ body {
   margin-left: auto;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+}
+
+.navigation_user_item:nth-child(2) {
+  margin-left: 24px;
+}
+
+.navigation_user_item:last-child {
+  margin-left: 32px;
 }
 
 .navigation_user_link {
@@ -248,7 +257,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-top: 69px;
+  padding-top: 90px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -389,7 +398,7 @@ body {
 
 .search {
   text-align: center;
-  padding-top: 69px;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -410,7 +419,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 69px;
+  padding-top: 96px;
   padding-bottom: 104px;
 }
 
@@ -554,6 +563,15 @@ body {
   display: inline-block;
 }
 
+.search_button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  width: 376px;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
 .navigation_button:hover,
 .search_button:hover {
   background-color: #615048;
@@ -606,7 +624,6 @@ body {
 }
 
 .subscribe_input {
-  padding: 20px 14px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -614,10 +631,24 @@ body {
   line-height: 24px;
   width: 452px;
   height: 52px;
+  padding: 20px 20px;
   box-sizing: border-box;
   border: none;
   border-radius: 4px 0 0 4px;
+  outline: none;
 }
+
+.subscribe_input:hover {
+background-color: #E6E6E6;
+}
+
+.subscribe_input:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+
+
 
 
 /* Catalog */
