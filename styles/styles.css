@@ -180,6 +180,7 @@ body {
 
 .hero {
   background-image: url("../images/index/index-background.jpg");
+  background-color: #756157;
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding-top: 51px;
@@ -222,6 +223,7 @@ body {
   text-align: center;
   color: #000000;
   margin: 0;
+  padding: 0 40px;
 }
 
 .advantages_title {
@@ -240,6 +242,7 @@ body {
 .subscribe_text {
   text-align: center;
   margin: 0;
+  padding: 0 40px;
 }
 
 .search_text {
@@ -268,7 +271,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
-  min-height: 385px;
+  height: 385px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .advantages_item_image {
@@ -355,12 +360,12 @@ body {
 
 .recommendations_item {
   width: 400px;
-  min-height: 385px;
+  height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -416,7 +421,8 @@ body {
 
 .subscribe {
   background-image: url("../images/index/subscribe.jpg");
-  background-size: 100% auto;
+  background-color: #756157;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 96px;
@@ -432,17 +438,14 @@ body {
 /* Footer */
 
 
-.page_footer_container {
+.main_footer {
   display: flex;
-  min-height: 120px;
+  justify-content: space-between;
+  padding: 46px 70px 30px;
 }
 
 .footer_social {
   width: 144px;
-  margin-left: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .social_list {
@@ -497,10 +500,8 @@ body {
 .contacts {
   font-size: 40px;
   line-height: 40px;
-  width: 720px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 331px;
+  display: inline-block;
 }
 
 .contacts_link {
@@ -522,9 +523,10 @@ body {
 }
 
 .footer_logo {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: inline-block;
 }
 
 .footer_logo_link {
